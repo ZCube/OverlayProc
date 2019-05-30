@@ -1,0 +1,7 @@
+.7z\
+.lib\
+.pdb\
+.obj\
+.exp\
+.git\
+.gitignore\

@@ -1,0 +1,38 @@
+{
+   "4658bc3a-4aa7-493a-9b51-a5f90709f8ef" : {
+      "NoActivate" : false,
+      "Transparent" : false,
+      "fps" : 30.0,
+      "height" : 400,
+      "hide" : false,
+      "id" : "4658bc3a-4aa7-493a-9b51-a5f90709f8ef",
+      "opacity" : 1.0,
+      "title" : "",
+      "url" : "http://google.co.kr",
+      "useDragFilter" : true,
+      "useDragMove" : true,
+      "useResizeGrip" : true,
+      "width" : 600,
+      "x" : 1802,
+      "y" : 310,
+      "zoom" : 1.0
+   },
+   "ddb024e6-4892-4c4b-8677-f86ad97bd228" : {
+      "NoActivate" : false,
+      "Transparent" : false,
+      "fps" : 30.0,
+      "height" : 400,
+      "hide" : false,
+      "id" : "ddb024e6-4892-4c4b-8677-f86ad97bd228",
+      "opacity" : 1.0,
+      "title" : "",
+      "url" : "http://google.co.kr",
+      "useDragFilter" : true,
+      "useDragMove" : true,
+      "useResizeGrip" : true,
+      "width" : 600,
+      "x" : 1105,
+      "y" : 98,
+      "zoom" : 1.0
+   }
+}

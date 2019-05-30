@@ -1,0 +1,17 @@
+{
+   "NoActivate" : false,
+   "Transparent" : false,
+   "fps" : 30.0,
+   "height" : 400,
+   "hide" : false,
+   "opacity" : 1.0,
+   "title" : "",
+   "url" : "http://google.co.kr",
+   "useDragFilter" : true,
+   "useDragMove" : true,
+   "useResizeGrip" : true,
+   "width" : 600,
+   "x" : 0,
+   "y" : 0,
+   "zoom" : 1.0
+}
