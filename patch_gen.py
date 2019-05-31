@@ -21,8 +21,15 @@ var = arr[0:-1]
 if len(var) < 3:
   var = var + ['0'] * (3 - len(arr))
 
-vars = var + [arr[-1].split('-')[0]]
-varl = var + [arr[-1]]
+if dev:
+  vars = var + [arr[-1].split('-')[0]]
+  varl = var + [arr[-1].split('-')[0]+'-'+sys.argv[1]]
+else:
+  vars = var + [arr[-1].split('-')[0]]
+  varl = var + [arr[-1]]
+if "APPVEYOR_BUILD_NUMBER" in os.environ:
+  vars[-1] = os.environ["APPVEYOR_BUILD_NUMBER"]
+  varl[-1] = os.environ["APPVEYOR_BUILD_NUMBER"]+"-"+ arr[-1].split('-')[1]
 
 def tagOnly():
   return ".".join(var[0:3])
