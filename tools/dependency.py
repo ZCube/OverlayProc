@@ -234,7 +234,7 @@ dirs = [
     vcdir+"redist/x86/Microsoft.*.MFC",
     vcdir+"redist/x86/Microsoft.*.MFCLOC",
     vcdir+"redist/x86/Microsoft.*.OPENMP",
-    vcdir+"redist/x86/Microsoft.*.CRT",
+    # vcdir+"redist/x86/Microsoft.*.CRT",
     vcdir+"redist/x86/Microsoft.*.CXXAMP",
     root+"prebuilt/cef/x86/Release",
     "C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Developer Runtime/x86",
@@ -248,7 +248,7 @@ dirs = [
     vcdir+"redist/x64/Microsoft.*.MFC",
     vcdir+"redist/x64/Microsoft.*.MFCLOC",
     vcdir+"redist/x64/Microsoft.*.OpenMP",
-    vcdir+"redist/x64/Microsoft.*.CRT",
+    # vcdir+"redist/x64/Microsoft.*.CRT",
     root+"prebuilt/cef/x64/Release",
     "C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Developer Runtime/x64",
 ]
