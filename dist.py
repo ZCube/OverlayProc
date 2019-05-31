@@ -53,5 +53,5 @@ if platform.system() == "Windows":
       ret = os.system("git commit -m \"Commit\"")
       # if(ret !=0): sys.exit(ret)
       os.chdir(root)
-      ret = os.system("py -3 patch_gen.py {} dist OverlayProc_x86_{}".format(bin_dir, tag))
+      ret = os.system("py -3 patch_gen.py {} dist OverlayProc_x64_{}".format(bin_dir, tag))
       if(ret !=0): sys.exit(ret)

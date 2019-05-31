@@ -2,6 +2,7 @@ from subprocess import check_output
 import re
 import glob
 import sys
+import os
 
 dev = False
 
@@ -20,6 +21,9 @@ if dev:
 else:
   vars = var + [arr[-1].split('-')[0]]
   varl = var + [arr[-1]]
+if "APPVEYOR_BUILD_NUMBER" in os.environ:
+  vars[-1] = os.environ["APPVEYOR_BUILD_NUMBER"]
+  varl[-1] = os.environ["APPVEYOR_BUILD_NUMBER"]+"-"+ arr[-1].split('-')[1]
 
 def tagOnly():
   return ".".join(var[0:3])
