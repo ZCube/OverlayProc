@@ -3,9 +3,9 @@ import os
 
 class DependencyConan(ConanFile):
   settings = "os", "compiler", "build_type", "arch"
-  requires = "boost/1.70.0@conan/stable", "OpenSSL/latest_1.0.2x@conan/stable" ,"jsoncpp/1.8.4@theirix/stable" # comma-separated list of requirements
+  requires = "boost/1.69.0@conan/stable", "OpenSSL/latest_1.0.2x@conan/stable" ,"jsoncpp/1.8.4@theirix/stable" # comma-separated list of requirements
   generators = "cmake"
-  default_options = "boost:shared=False", "OpenSSL:shared=False", "jsoncpp:shared=False", "boost:without_stacktrace=True"
+  default_options = "boost:shared=False", "OpenSSL:shared=False", "jsoncpp:shared=False"
 
   def imports(self):
     if self.settings.build_type == "Debug":
