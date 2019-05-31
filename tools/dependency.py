@@ -268,13 +268,13 @@ debug = True if "debug" in os.path.basename(os.getcwd()).lower() else False
 qtdir = qtdir64 if "x64" in os.getcwd().lower() else qtdir
 
 dirs = [
-    "C:/Program Files (x86)/Microsoft Visual Studio/*/BuildTools/VC/Redist/MSVC/*/x86/Microsoft.VC*.CRT",
+    "C:/Program Files (x86)/Microsoft Visual Studio/*/*/VC/Redist/MSVC/*/x86/Microsoft.VC*.CRT",
     "C:/Program Files (x86)/Windows Kits/10/Redist/ucrt/DLLs/x86",
 ]
 dlls_x86_ucrt = [functools.reduce(operator.add,([glob.glob(y)])) for y in [os.path.join(x, "*.dll") for x in dirs]]
 dlls_x86_ucrt = functools.reduce(operator.add,(dlls_x86_ucrt))
 dirs = [
-    "C:/Program Files (x86)/Microsoft Visual Studio/*/BuildTools/VC/Redist/MSVC/*/x64/Microsoft.VC*.CRT",
+    "C:/Program Files (x86)/Microsoft Visual Studio/*/*/VC/Redist/MSVC/*/x64/Microsoft.VC*.CRT",
     "C:/Program Files (x86)/Windows Kits/10/Redist/ucrt/DLLs/x64",
 ]    
 dlls_x64_ucrt = [functools.reduce(operator.add,([glob.glob(y)])) for y in [os.path.join(x, "*.dll") for x in dirs]]
