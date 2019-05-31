@@ -1,5 +1,6 @@
 # OverlayProc
 OverlayProc
+[![Build status](https://ci.appveyor.com/api/projects/status/j02ws5bngmwep7a9?svg=true)](https://ci.appveyor.com/project/ZCube/overlayproc)
 
 # Build
 
