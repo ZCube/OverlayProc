@@ -40,7 +40,8 @@ def copy_newer(src, dest):
   else:
     if os.path.exists(dest):
       if os.stat(src).st_mtime - os.stat(dest).st_mtime > 1:
-        shutil.copy2(src, dest)
+          os.remove(dest)
+          shutil.copy2(src, dest)
     else:
       shutil.copy2(src, dest)
     
